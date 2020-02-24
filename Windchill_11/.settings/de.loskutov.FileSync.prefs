@@ -1,0 +1,8 @@
+WARNING=DO NOT MODIFY THIS FILE IF YOU DON'T UNDERSTAND
+defaultDestination=
+defaultVariables=
+eclipse.preferences.version=1
+includeTeamPrivateFiles=false
+map|0=bin|E\:/PTC/Windchill_11.0/Windchill/codebase|,|,|,
+map|1=src|E\:/PTC/Windchill_11.0/Windchill/src|,|,|,
+useCurrentDateForDestinationFiles=false
