@@ -7,7 +7,7 @@ import com.ptc.core.ui.validation.UIValidationResult;
 import com.ptc.core.ui.validation.UIValidationResultSet;
 import com.ptc.core.ui.validation.UIValidationStatus;
 
-import com.ptc.wvs.livecycle.assembler.Locale;
+
 
 import wt.doc.WTDocument;
 import wt.fc.Persistable;
