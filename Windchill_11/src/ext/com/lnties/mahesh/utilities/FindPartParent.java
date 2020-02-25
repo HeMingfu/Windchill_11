@@ -12,7 +12,6 @@ import wt.fc.QueryResult;
 import wt.part.WTPart;
 import wt.part.WTPartMaster;
 import wt.pom.PersistenceException;
-import wt.query.QueryException;
 import wt.query.QuerySpec;
 import wt.query.SearchCondition;
 import wt.util.WTException;

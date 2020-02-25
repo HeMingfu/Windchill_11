@@ -23,7 +23,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 
-import com.ptc.netmarkets.model.NmException;
 import com.ptc.netmarkets.util.beans.NmCommandBean;
 
 import wt.content.ApplicationData;
@@ -37,6 +36,10 @@ import wt.util.WTProperties;
 
 public class DownloadSecondaryContent implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private static final Logger log = LogR.getLogger(DownloadSecondaryContent.class.getName());
 	
 	
@@ -47,14 +50,14 @@ public class DownloadSecondaryContent implements Serializable {
 		System.out.println("Inside Class ParamNmCommandBean getNmOidSelectedInOpener() ### => "+ paramNmCommandBean.getNmOidSelectedInOpener());
 		/*FileOutputStream fos = new FileOutputStream("sample.zip");
         ZipOutputStream zipOS = new ZipOutputStream(fos);*/
-		ArrayList al = paramNmCommandBean.getNmOidSelectedInOpener();
-		HashMap hm=paramNmCommandBean.getMap();
+		ArrayList<?> al = paramNmCommandBean.getNmOidSelectedInOpener();
+		HashMap<?, ?> hm=paramNmCommandBean.getMap();
 		
 		
 		System.out.println("Command Bean Hash Map is"+hm);
 		
 		System.out.println("ArrayList with OID Selected"+al);
-		Iterator itr = al.iterator();
+		Iterator<?> itr = al.iterator();
 		List<File> arr=new ArrayList<>();
 		while (itr.hasNext()) {
 			ReferenceFactory rf = new ReferenceFactory();
@@ -64,7 +67,7 @@ public class DownloadSecondaryContent implements Serializable {
 			
 			System.out.println("Content Object"+content);
 			
-			Vector vcontent = wt.content.ContentHelper.getApplicationData(content); 
+			Vector<?> vcontent = wt.content.ContentHelper.getApplicationData(content); 
 			
 			log.info("Iterating the Application Data Contents starts");
 			

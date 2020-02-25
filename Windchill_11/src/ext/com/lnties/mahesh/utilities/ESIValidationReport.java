@@ -23,24 +23,14 @@ import org.apache.poi.hssf.util.HSSFColor;
 
 
 
-import com.ptc.windchill.enterprise.epmdoc.config.epmdocResource;
-
-import ext.carrier.wc.change.changenotice.IBAReader;
-import ext.carrier.wc.esi.CarrierESIValidationReportAttach;
-import wt.change2.ChangeException2;
 import wt.change2.ChangeHelper2;
 import wt.change2.WTChangeActivity2;
-import wt.change2.WTChangeIssue;
 import wt.change2.WTChangeOrder2;
-import wt.clients.beans.explorer.WT;
-import wt.clients.prodmgmt.WTPartHelper;
 import wt.doc.WTDocument;
 import wt.epm.EPMDocument;
-import wt.epm.build.EPMBuildRule;
 import wt.fc.PersistenceHelper;
 import wt.fc.QueryResult;
 import wt.fc.WTObject;
-import wt.iba.value.IBAHolder;
 import wt.part.WTPart;
 import wt.part.WTPartMaster;
 import wt.query.QuerySpec;
